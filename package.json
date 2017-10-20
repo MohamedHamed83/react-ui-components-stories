@@ -7,6 +7,11 @@
     "test": "jest",
     "storybook": "storybook start -p 7007"
   },
+  "rnpm": {
+    "assets": [
+      "./storybook/stories/Fonts"
+    ]
+  },
   "dependencies": {
     "prop-types": "^15.6.0",
     "react": "16.0.0-alpha.6",
