@@ -16,11 +16,11 @@ const StorybookUI = getStorybookUI({
 setTimeout(
   () =>
     setOptions({
-      name: 'React Native Vanilla',
+      name: 'react ui components stories',
     }),
   100
 );
 
-AppRegistry.registerComponent('ReactNativeVanilla', () => StorybookUI);
+AppRegistry.registerComponent('ReactUiComponentsStories', () => StorybookUI);
 
 export { StorybookUI as default };

@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { TouchableHighlight, StyleSheet, View, ActivityIndicator, Platform } from 'react-native'
+import testProps from '../Lib/TestUtils'
 import styles from './ButtonStyles'
 import heroStyles from './ButtonHeroStyles'
 import overlayStyles from './ButtonOverlayStyles'
@@ -124,7 +125,8 @@ export default function Button ({
       underlayColor={onTapColor}
       disabled={disabled}
       onPress={onPress}
-      >
+      {...testProps(testId)}
+    >
       {type === 'Loading'
         ? <View
           style={{

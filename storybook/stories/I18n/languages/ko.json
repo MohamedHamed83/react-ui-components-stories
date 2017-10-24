@@ -1,0 +1,78 @@
+{
+    "languageName": "한국어",
+    "languageDisplayName": "Korean",
+    
+    "addonSelector": {
+        "title": "{{addonType}}를 추가로 구매 하시겠습니까?",
+        "serviceType": {
+            "data" : "데이타",
+            "minutes": "전화",
+            "txts": "문자"
+        }
+    },
+    "infoRefreshedTile": {
+        "resetTime": "초기화 하기 {{number}}일 남음",
+        "tillReset": "",
+        "refreshedText": "{{time}}에 새로고침"
+    },
+    "loginScreen": {
+        "title": "로그인",
+        "appName": "My Vodafone",
+        "username": "아이디",
+        "usernamePlaceholder": "e.g. chew.bacca@gmail.com",
+        "password": "비밀번호",
+        "passwordPlaceholder":"비밀번호",
+        "logInButton": "로그인",
+        "forgottenPasswordButton": "비밀번호를 잊어 버리셨나요?",
+        "notRegisteredTitle": "{{appName}}에 \n 가입하셨나요?",
+        "registerNowButton": "가입하기",
+        "error": {
+            "incorrectPassword": "입력하신 비밀번호가 맞지 않습니다",
+            "lockedAccount": "계정이 잠긴 상태로 들어갑니다. 777로 전화하셔서 계정을 다시 활성화 시키십시요."
+        }
+    },
+    "serviceSelector": {
+        "title": "원하시는 서비스를 선택하세요",
+        "nameText": "{{accountName}}님의",
+        "phone": "계정",
+        "notNamed": "무명-저장된 이름이 없습니다"
+    },
+    "spendTile": {
+        "outOfPlanSpend": {
+            "including": "플랜 외에",
+            "summary": "추가된 금액 포함",
+            "none": "고객님 플랜 위에 추가금액은 없습니다"
+        },
+        "currentSpend": "현재 요금"
+    },
+    "topUpSelector": {
+        "title": "톱업 하기!"
+    },
+    "usageDial": {
+        "data": {
+            "title": "데이터",
+            "iconText": "데이터"
+        },
+        "minutes": {
+            "title": "전화",
+            "iconText": "전화"
+        },
+        "txts": {
+            "title": "문자",
+            "iconText": "문자"
+        },
+        "unlimited": "무제한",
+        "usageTotal": "남음,{{entitlement}}에서"
+    },
+    "voiceOfVodafone": {
+        "welcome": "보다폰에 오신걸 환영합니다",
+        "greeting": {
+            "morning": "환영합니다",
+            "afternoon": "환영합니다",
+            "evening": "환영합니다"
+        }   
+    },
+    "helpButton": {
+        "title": "도움이 필요 하신가요?"
+    }
+}

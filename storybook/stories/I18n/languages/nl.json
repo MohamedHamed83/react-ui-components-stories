@@ -1,0 +1,78 @@
+{
+    "languageName": "Nederlands",
+    "languageDisplayName": "Dutch",
+    
+    "addonSelector": {
+        "title": "Kies een {{addonType}} plan",
+        "serviceType": {
+            "data" : "data",
+            "minutes": "minutes",
+            "txts": "txt"
+        }
+    },
+    "infoRefreshedTile": {
+        "resetTime": "{{number}} dagen",
+        "tillReset": "tot heroplevering",
+        "refreshedText": "Gerefresht om {{time}}"
+    },
+    "loginScreen": {
+        "title": "Inloggen",
+        "appName": "My Vodafone",
+        "username": "Gebruikersnaam",
+        "usernamePlaceholder": "e.g. chew.bacca@gmail.com",
+        "password": "Wachtwoord",
+        "passwordPlaceholder": "Uw wachtwoord",
+        "logInButton": "Inloggen",
+        "forgottenPasswordButton": "Wachtwoord vergeten",
+        "notRegisteredTitle": "Niet geregistreerd bij \n {{appName}}?",
+        "registerNowButton": "Nu registreren",
+        "error": {
+            "incorrectPassword": "Ingevoerde wachtwoord is niet juist",
+            "lockedAccount": "Uw account is geblokkeerd. Bel ons op 777 om u van dienst te zijn."
+        }
+    },
+    "serviceSelector": {
+        "title": "Selecteer een service",
+        "nameText": "{{accountName}}'s",
+        "phone": "mobiel",
+        "notNamed": "Niet benoemd"
+    },
+    "spendTile": {
+        "outOfPlanSpend": {
+            "including": "inclusief",
+            "summary": "buiten plan uitgave",
+            "none": "Uw heeft geen buiten plan uitgave"
+        },
+        "currentSpend": "huidige uitgave vanaf laatste factuur"
+    },
+    "topUpSelector": {
+        "title": "Hier je beltegoed opwaarderen"
+    },
+    "usageDial": {
+        "data": {
+            "title": "Data",
+            "iconText": "Data"
+        },
+        "minutes": {
+            "title": "Min",
+            "iconText": "Min"
+        },
+        "txts": {
+            "title": "Txt",
+            "iconText": "Txt"
+        },
+        "unlimited": "Onbeperkt",
+        "usageTotal": "van {{entitlement}}"
+    },
+    "voiceOfVodafone": {
+        "welcome": "Welkom op My Vodafone",
+        "greeting": {
+            "morning": "Goedemorgen",
+            "afternoon": "Goedemiddag",
+            "evening": "Goedenavond"
+        }
+    },
+    "helpButton": {
+        "title": "Hulp nodig?"
+    }
+}

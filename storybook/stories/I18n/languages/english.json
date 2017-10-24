@@ -1,0 +1,338 @@
+{
+  "languageName": "English",
+  "languageDisplayName": "English (New Zealand)",
+
+  "app": {
+    "error": {
+      "serverError": "Oops! Something went wrong, please try again."
+    },
+    "processing": "This won't take too long. Please wait."
+  },
+  "addCardScreen": {
+    "addCardButton": "Add new card"
+  },
+  "addonSelector": {
+    "title": "Choose a {{addonType}} add-on",
+    "serviceType": {
+      "data": "data",
+      "minutes": "minutes",
+      "txts": "txt"
+    }
+  },
+  "dashboard": {
+    "balance": "Balance",
+    "planOnHoldMessage": "Your plan's on hold. Please top up soon."
+  },
+  "infoRefreshedTile": {
+    "resetTime": "{{number}} days",
+    "tillReset": "to reset",
+    "refreshedText": "Refreshed at {{time}}"
+  },
+  "helpButton": {
+    "title": "Need help?"
+  },
+  "loginScreen": {
+    "title": "Sign in to",
+    "appName": "My Vodafone",
+    "username": "Mobile or email",
+    "usernamePlaceholder": "e.g. 0211234567",
+    "password": "Password",
+    "passwordPlaceholder": "Your saved password",
+    "logInButton": "Sign in",
+    "forgottenPasswordButton": "Forgotten Password",
+    "notRegisteredTitle": "Not registered with \n {{appName}}?",
+    "registerNowButton": "Register Now",
+    "error": {
+      "lockedAccount": "Your account has been locked. Please call 777.",
+      "disabledAccount": "Your account has been disabled. Please call 777.",
+      "errorLoggingIn": "Sorry, we can't sign you in right now. Please try again later.",
+      "badRequest": "Username/Password cannot be empty",
+      "invalidCredentials": "Your sign in details are invalid.",
+      "sessionTimeout": "Sorry, we've signed you out to keep you secure. Please sign in again."
+    }
+  },
+  "settingsScreen": {
+    "title": "Settings"
+  },
+  "menuItems": {
+    "usage": "View detailed usage",
+    "topUp": "Top up",
+    "plan": "Plan & Add-ons",
+    "fantasticFridays": "Fantastic Fridays",
+    "fridayDeals": "Friday deals",
+    "help": "Need help?",
+    "accountInfo": "Your account",
+    "settings": "Settings",
+    "logOut": "Sign out"
+  },
+  "editCard": {
+    "saveCard": "Save changes",
+    "removeCard": "Remove this card"
+  },
+  "newCard": {
+    "error": {
+      "cardNumber": "Invalid card number",
+      "expiryMonth": "Invalid month",
+      "expiryYear": "Invalid year",
+      "expiryDate": "Invalid expiry date",
+      "cvv": "Invalid security code"
+    },
+    "placeholder": {
+      "cardNumber": "Card number",
+      "cardName": "Name on card",
+      "expiryMonth": "MM",
+      "expiryYear": "YY",
+      "cvv": "CVV"
+    },
+    "label": {
+      "cardNumber": "Card number",
+      "cardName": "Name on card",
+      "expiryDate": "Expiry date",
+      "cvv": "Security code"
+    },
+    "saveCard": "Save my card",
+    "saveCardDisabled": "Save my card (You can only save a maximum of 10 cards)",
+    "maxCardsExceeded": "You can only save a maximum of 10 cards"
+  },
+  "paymentMethods": {
+    "addNewCard": "Add new card",
+    "addCardSuccess": "Your card has been added",
+    "cardNumber": "**** **** **** {{lastFourDigits}}",
+    "creditDebitCard": "Credit/Debit card",
+    "noSavedCards": "You don't have any cards saved",
+    "maxCardsLimitReached": "You can only save a maximum of {{maxCards}} cards",
+    "editCardSuccess": "Your changes have been saved",
+    "removeCardSuccess": "Your card has been removed"
+  },
+  "paymentSelector": {
+    "selectPaymentMethod": "Select payment method",
+    "useNewCard": "Use a debit/credit card",
+    "useAnotherNewCard": "Use another debit/credit card",
+    "otherHeading": "Other",
+    "useTopUpVoucher": "Top up with recharge voucher",
+    "voucherInputPlaceholder": "Recharge voucher number",
+    "cardNumber": "**** **** **** {{lastFourDigits}}",
+    "securePaymentInfo": "SSL secured transaction"
+  },
+  "serviceSelector": {
+    "title": "Select a service",
+    "nameText": "{{accountName}}'s",
+    "phone": "phone",
+    "notNamed": "Not named",
+    "onHold": "On hold",
+    "planEndsIn": "Ends in ",
+    "left": " left",
+    "onAccountPlanDescription": "Your plan has"
+  },
+  "spendTile": {
+    "outOfPlanSpend": {
+      "including": "including",
+      "summary": "out of plan spend",
+      "none": "You do not have any out of plan spend"
+    },
+    "currentSpend": "current spend since last bill"
+  },
+  "topUpSelector": {
+    "title": "Top up",
+    "accountInfoTitle": "{{name}} - {{planName}}",
+    "accountInfoBal": "Balance: ${{balance}}",
+    "paymentButton": "Complete payment",
+    "balance": "Balance",
+    "processingPayment": "This won't take too long. Please wait.",
+    "otherTopUpAmountButton": "More",
+    "error": {
+      "card": "Your top up wasn't successful. Please check your card balance and try again.",
+      "newCardAndSave": "Your top up wasn't successful. Please check your card balance and try again. We also haven't saved your card details.",
+      "generic": "Oops! Something went wrong, please try again."
+    }
+  },
+  "topUpVoucher": {
+    "error": {
+      "length": "Please enter all 12 digits of the recharge voucher number, including any zeros",
+      "empty": "Please enter the recharge voucher number",
+      "invalid": "Sorry, this recharge voucher number isn't valid. Please check it and try again.",
+      "used": "Sorry, this recharge voucher number has already been used. Please get a new voucher.",
+      "expired": "Sorry, this recharge voucher number has expired. Please get a new voucher.",
+      "inactive": "Sorry, this recharge voucher number isn't active. Please get a new voucher.",
+      "maxBalance": "Sorry, this voucher top up can't be processed because it will exceed your maximum balance limit.",
+      "internalError": "Sorry, but our online voucher top up isn't currently available. Please FREE TXT the recharge voucher number to 887 to top up.",
+      "temporary":
+        "Sorry, but our online voucher top up isn't currently available. Please try again later or FREE TXT the recharge voucher number to 887 to top up.",
+      "barredCall": "Sorry, but you can't top up this mobile number at the moment. Please try again later.",
+      "barredSubscriber": "Sorry, but you can't top up this mobile number at the moment. Please call 777."
+    }
+  },
+  "usageDial": {
+    "data": {
+      "title": "Data",
+      "iconText": "Data"
+    },
+    "mins": {
+      "title": "Minutes",
+      "iconText": "Mins"
+    },
+    "txts": {
+      "title": "Texts",
+      "iconText": "TXTs"
+    },
+    "units": {
+      "gb": "GB",
+      "mb": "MB",
+      "mins": "mins",
+      "txts": "TXTs"
+    },
+    "unlimited": "Unlimited",
+    "usageTotal": "{{unit}} left of {{total}} {{unit}}",
+    "carryOver": "Incl. Carry Over",
+    "casualRates": "Casual rates apply",
+    "casualData": "Casual Data applies",
+    "groupData": "Group data"
+  },
+  "voiceOfVodafone": {
+    "welcome": "Welcome to ",
+    "myVodafone": "My Vodafone",
+    "greeting": {
+      "morning": "Good morning",
+      "afternoon": "Good afternoon",
+      "evening": "Good evening"
+    }
+  },
+  "yourAccount": {
+    "paymentMethodsHeading": "Payment Methods",
+    "creditDebitCard": "Credit/Debit card",
+    "addNewCardButton": "Add new card",
+    "noSavedCards": "You don't have any cards saved"
+  },
+  "notifications": {
+    "fantasticFridays": "Fantastic Fridays rewards you with amazing deals and exclusive experiences any day of the week. Would you like to check them out?",
+    "lowData": {
+      "single": "You're running low on data",
+      "multi": "{{connectionName}} is running low on data"
+    },
+    "lowMins": {
+      "single": "You're running low on mins",
+      "multi": "{{connectionName}} is running low on mins"
+    },
+    "lowTxts": {
+      "single": "You're running low on TXTs",
+      "multi": "{{connectionName}} is running low on TXTs"
+    },
+    "insufficientFunds": {
+      "single": "Your balance is too low for your plan to renew on {{renewalDate}}",
+      "multi": "{{connectionName}}'s balance is too low for their plan to renew on {{renewalDate}}"
+    },
+    "fridayDeals": {
+      "single": "Would you like to check out the latest Fantastic Friday Prepay deals?",
+      "multi": "Would you like to check out the latest Fantastic Friday Prepay deals for {{connectionName}}?"
+    },
+    "topupSuccess": {
+      "header": "All Done!",
+      "single": "You topped up ${{topupAmount}}",
+      "multi": "{{connectionName}}'s topped up ${{topupAmount}}"
+    },
+    "topupSaveCardSuccess": {
+      "header": "All Done!",
+      "single": "You topped up ${{topupAmount}}. Your card ending {{lastFourDigits}} has been saved.",
+      "multi": "{{connectionName}}'s topped up ${{topupAmount}}. Your card ending {{lastFourDigits}} has been saved."
+    },
+    "topupSaveCardFailure": {
+      "header": "All Done!",
+      "single": "You topped up ${{topupAmount}}. Your card ending {{lastFourDigits}} wasn't saved. Tap below to add your card manually.",
+      "multi": "{{connectionName}}'s topped up ${{topupAmount}}. Your card ending {{lastFourDigits}} wasn't saved. Tap below to add your card manually."
+    },
+    "buttons": {
+      "yes": "Yes",
+      "okGotIt": "OK, got it!",
+      "notNow": "Not now",
+      "addMyCard": "Add my card"
+    }
+  },
+  "planAndAddOns": {
+    "title": "Plan & Add-Ons",
+    "addOnsHeading": "Add-Ons",
+    "renewalInfoCancelled": "Your plan has been cancelled and ends in {{remainingDays}} on {{renewalDate}}",
+    "renewalInfoOnHold": "Your plan has been put on hold",
+    "renewalInfoActive": "Plan renews in {{remainingDays}} on {{renewalDate}}",
+    "planInfoNoEntitlements":
+      "To see the data, mins or TXTs available on this plan, please check your Add-Ons below. If you haven’t purchased any Add-Ons, casual rate will apply.",
+    "onHoldWarning": "You don't have enough credit for your plan to renew. Top up to get going again.",
+    "onHold": "On hold",
+    "unlimited": { "DATA": "Unlimited data", "MINS": "Unlimited mins", "TXTS": "Unlimited TXTs" },
+    "total": { "DATA": "{{total}} data", "MINS": "{{total}} mins", "TXTS": "{{total}} TXTs" },
+    "remaining": "{{remaining}} left",
+    "carryOverData": "*{{planTotal}}{{unit}} from plan + {{carryOver}}{{unit}} carry over",
+    "carryOver": "*{{planTotal}} from plan + {{carryOver}} carry over",
+    "button": {
+      "managePlan": "Manage Plan",
+      "cancelPlan": "Cancel Plan",
+      "buyNow": "Buy Now ${{price}}",
+      "fullDetails": "Full Details",
+      "availableAddOns": "All available Add-ons"
+    },
+    "cancelPlanSuccess": "Your plan has been cancelled",
+    "cancelPlanConfirmationMessage": "If you cancel now, your {{planName}} won't renew on {{renewalDate}}.",
+    "remainingTimeText": {
+      "renewsIn": "Renews in {{remainingDays}} on {{renewalDate}}",
+      "endsIn": "Ends in {{remainingDays}} on {{renewalDate}}",
+      "onHold": "On hold"
+    },
+    "browseAvailable": "Browse through our exciting Add-Ons offering great value.",
+    "error": "Oops! Something went wrong. Please try again."
+  },
+  "availableAddOns": {
+    "title": "Available Add-Ons",
+    "filterCategories": {
+      "all": "Show all",
+      "data": "Data",
+      "mins": "Minutes",
+      "txts": "TXTs",
+      "media": "Media",
+      "others": "Others"
+    },
+    "bestMates": {
+      "label": "BestMate number",
+      "placeholder": "BestMate number"
+    },
+    "buyAddOnConfirmationMessage": "You've chosen a {{addOnName}} Add-On for ${{price}}.",
+    "confirmationYes": "Yes",
+    "confirmationNo": "No",
+    "buySuccessMessage": "Your {{addOnName}} Add-On has been purchased"
+  },
+  "activeAddOn": {
+    "title": "Active Add-On",
+    "onHoldWarning": "You didn’t have enough credit for your Add-On to renew. Top up to get going again.",
+    "button": {
+      "buyNow": "Buy now ${{price}}",
+      "saveChanges": "Save changes ${{price}}",
+      "cancel": "Cancel"
+    },
+    "moreInfo": "More info",
+    "renews": "Renews",
+    "ends": "Ends",
+    "oneDayRemaining": "in 1 day",
+    "remainingDays": "in {{remainingDays}} days",
+    "bestMatesSingle": "Bestmate Number",
+    "bestMatesPlural": "Bestmate Numbers",
+    "unlimited": "Unlimited",
+    "dataLeft": "{{unit}} left",
+    "minsLeft": "Mins left",
+    "txtsLeft": "TXTs left",
+    "entitlementDetail": "{{detail}} left",
+    "entitlementTypes": {
+      "DATA": "data",
+      "VOICE": "mins",
+      "TXT": "TXTs",
+      "and": "&"
+    },
+    "buyNowConfirmation":
+      "Are you sure you want repurchase this Add-On? If you do, you’ll lose any unused {{entitlements}} you currently have with this Add-On.",
+    "confirmationHeader": "Are you sure?",
+    "cancelAddOnConfirmationMessage": "If you cancel now, your {{addOnName}} Add-On won't renew on {{renewalDate}}.",
+    "confirmationYes": "Yes",
+    "confirmationNo": "No",
+    "cancelSuccessMessage": "Your {{addOnName}} Add-On has been cancelled"
+  },
+  "managePlan": {
+    "title": "Manage plan"
+  }
+}

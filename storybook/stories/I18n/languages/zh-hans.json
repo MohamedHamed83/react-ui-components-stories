@@ -1,0 +1,89 @@
+{  
+    "languageName": "中文",
+    "languageDisplayName": "Chinese (Simplified)",
+    
+   "addonSelector":{  
+      "title":"选择一个 {{addonType}} 附加包",
+      "serviceType":{  
+         "data":"流量",
+         "minutes":"分钟",
+         "txts":"短信"
+      }
+   },
+   "infoRefreshedTile":{  
+      "resetTime":"{{number}} 天",
+      "tillReset":"重启",
+      "refreshedText":"更新时间 {{time}}"
+   },
+   "helpButton":{  
+      "title":"需要帮助吗?"
+   },
+   "loginScreen":{  
+      "title":"登陆",
+      "appName":"我的沃达丰",
+      "username":"用户名",
+      "usernamePlaceholder":"比如: chew.bacca@gmail.com",
+      "password":"密码",
+      "passwordPlaceholder":"已存储的密码",
+      "logInButton":"登陆",
+      "forgottenPasswordButton":"密码恢复",
+      "notRegisteredTitle":"次用户名未注册 \n {{appName}}?",
+      "registerNowButton":"现在注册",
+      "error":{  
+         "incorrectPassword":"密码错误",
+         "lockedAccount":"您的账号已被锁， 请拨打客服热线 777"
+      }
+   },
+   "menuItems": {  
+    "usage":"查看详细消耗",
+    "topUp":"充值",
+    "plan":"套餐&附加包",
+    "fantasticFridays":"奇妙周五",
+    "fridayDeals":"周五大优惠",
+    "help":"需要帮助吗?",
+    "accountInfo":"您的账号",
+    "settings":"设置",
+    "logOut":"登出"
+   },
+   "serviceSelector":{  
+      "title":"选择服务",
+      "nameText":"{{accountName}}'",
+      "phone":"手机",
+      "notNamed":"未命名"
+   },
+   "spendTile":{  
+      "outOfPlanSpend":{  
+         "including":"包含",
+         "summary":"从套餐里花费掉",
+         "none":"无额外花费"
+      },
+      "currentSpend":"目前花费(从上次结账开始)"
+   },
+   "topUpSelector":{  
+      "title":"在这里充值"
+   },
+   "usageDial":{  
+      "data":{  
+         "title":"流量",
+         "iconText":"流量"
+      },
+      "minutes":{  
+         "title":"分钟",
+         "iconText":"分钟"
+      },
+      "txts":{  
+         "title":"短信",
+         "iconText":"短信"
+      },
+      "unlimited":"无限制",
+      "usageTotal":" {{entitlement}}"
+   },
+   "voiceOfVodafone":{  
+      "welcome":"欢迎来到 我的沃达丰",
+      "greeting":{  
+         "morning":"早上好",
+         "afternoon":"下午好",
+         "evening":"晚上好"
+      }
+   }
+}

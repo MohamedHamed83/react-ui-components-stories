@@ -1,0 +1,92 @@
+{
+    "languageName": "Māori",
+    "languageDisplayName": "Te Reo Māori (Aotearoa)",
+    
+    "addonSelector": {
+        "title": "Kōwhiria he {{addonType}} mōkihi",
+        "serviceType": {
+            "data" : "raraunga",
+            "minutes": "meneti",
+            "txts": "karere ā-waea"
+        }
+    },
+    "infoRefreshedTile": {
+        "resetTime": "{{number}} ra",
+        "tillReset": "noa tautuhi",
+        "refreshedText": "Tautuhi anō i {{time}}"
+    },
+    "helpButton": {
+        "title": "Kei te hiahia āwhina koe?"
+    },
+    "loginScreen": {
+        "title": "Whakauru",
+        "appName": "Vodafone toku",
+        "username": "Ingoa rorohiko",
+        "usernamePlaceholder": "e.g. chew.bacca@gmail.com",
+        "password": "kupuhipa",
+        "passwordPlaceholder": "Tō kupuhipa ora",
+        "logInButton": "hono mai",
+        "forgottenPasswordButton": "Wareware Kupuhipa",
+        "notRegisteredTitle": "He kaore kaiwhakamahi rēhita \n {{appName}}?",
+        "registerNowButton": "Rēhita i konei",
+        "error": {
+            "incorrectPassword": "Kupuhipa hē",
+            "lockedAccount": "E kore e taea te haere tonu.  Koa waea mai ki 777."
+        }
+    },
+    "settingsScreen": {
+        "title": "Tautuhinga"
+    },
+    "menuItems": {
+        "usage": "Whakapau taipitopito",
+        "topUp": "Tāpiri moni",
+        "plan": "Mahere me tāpiritanga",
+        "fantasticFridays": "Pai rāmere",
+        "fridayDeals": "Hoko rāmere",
+        "help": "Kei te hiahia āwhina koe?",
+        "accountInfo": "Tō pūkete",
+        "settings": "Tautuhinga",
+        "logOut": "Whakarere"
+    },
+    "serviceSelector": {
+        "title": "Tīpako i te ratonga",
+        "nameText": "{{accountName}}'s",
+        "phone": "waea",
+        "notNamed": "kore ingoa"
+    },
+    "spendTile": {
+        "outOfPlanSpend": {
+            "including": "tapeke",
+            "summary": "atu utu",
+            "none": "Kāore he utu"
+        },
+        "currentSpend": "current spend since last bill"
+    },
+    "topUpSelector": {
+        "title": "Utu i konei"
+    },
+    "usageDial": {
+        "data": {
+            "title": "raraunga",
+            "iconText": "raraunga"
+        },
+        "minutes": {
+            "title": "meneti",
+            "iconText": "meneti"
+        },
+        "txts": {
+            "title": "karere ā-waea",
+            "iconText": "karere ā-waea"
+        },
+        "unlimited": "Puta noa",
+        "usageTotal": "o {{entitlement}}"
+    },
+    "voiceOfVodafone": {
+        "welcome": "Nau mai ki te Vodafone Toku",
+        "greeting": {
+            "morning": "Ata marie",
+            "afternoon": "Tū-ā-ahiahi pai",
+            "evening": "Po marie"
+        }
+    }
+}

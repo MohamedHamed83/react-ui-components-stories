@@ -1,0 +1,83 @@
+{
+    "languageName": "हिंदी",
+    "languageDisplayName": "Hindi",
+    
+    "addonSelector": {
+        "title": "{{addonType}} के आड-आन चुने",
+        "serviceType": {
+            "data": "डट",
+            "minutes": "मिनट",
+            "txts": "टेक्स्ट"
+        }
+    },
+    "infoRefreshedTile": {
+        "resetTime": "{{number}} दिन",
+        "tillReset": "बाक़ी है",
+        "refreshedText": "{{time}} पे रेफ़्रेश हुआ"
+    },
+    "loginScreen": {
+        "title": "साइन इन करे",
+        "appName": "माई वोडफ़ोन पर",
+        "username": "मोबाइल या ईमेल",
+        "usernamePlaceholder": "e.g. chew.bacca@gmail.com",
+        "password": "पासवोर्ड",
+        "passwordPlaceholder": "आप का पासवोर्ड",
+        "logInButton": "साइन इन करे",
+        "forgottenPasswordButton": "पासवोर्ड रीसेट करे",
+        "notRegisteredTitle": "रेजिस्टर नहीं हुवे \n माई वोडफ़ोन पर?",
+        "registerNowButton": "रेजिस्टर करे",
+        "error": {
+            "incorrectPassword": "आप के द्वारा प्रवेश किया गया पासवोर्ड ग़लत है।",
+            "lockedAccount": "आप का अकाउंट लॉक हुआ गया है, कृपया हमें कोल करे 777 पर।",
+            "badCredentials": "आप के द्वारा प्रवेश किया गया पासवोर्ड य यूसरनेम ग़लत है।",
+            "changePassword": "कृपया आपका पासवोर्ड बदलिए।",
+            "invalidUsername": "आप के द्वारा प्रवेश किया गया यूसरनेम ग़लत है।",
+            "noPassword": "कृपया आपका पासवोर्ड प्रवेश करे।",
+            "errorLoggingIn": "एरर अकर्ड वाइल लागिंग इन।"
+        }
+    },
+    "serviceSelector": {
+        "title": "सर्विस चुनिए",
+        "nameText": "{{accountName}} का",
+        "phone": "फ़ोन",
+        "notNamed": "नाम"
+    },
+    "spendTile": {
+        "outOfPlanSpend": {
+            "including": "इनमे",
+            "summary": "योजना के बहार का करचा है",
+            "none": "महीने के योजना के बहार आप का करचा क्रंच नहीं है"
+        },
+        "currentSpend": "अन्थिम बिल के बाद का वार्थमन क्रंच"
+    },
+    "topUpSelector": {
+        "title": "गेट यो टाप अप्स हूर"
+    },
+    "usageDial": {
+        "data": {
+            "title": "डाँटा",
+            "iconText": "डाँटा"
+        },
+        "minutes": {
+            "title": "मिनट",
+            "iconText": "मिनट"
+        },
+        "txts": {
+            "title": "टेक्स्ट",
+            "iconText": "टेक्स्ट"
+        },
+        "unlimited": "आसिमिथ",
+        "usageTotal": "{{entitlement}} मे"
+    },
+    "voiceOfVodafone": {
+        "welcome": "माई वोडफ़ोन मे स्वागत है",
+        "greeting": {
+            "morning": "नमस्कार",
+            "afternoon": "नमस्कार",
+            "evening": "शुभ संध्या"
+        }
+    },
+    "helpButton": {
+        "title": " मदद चाहिए?"
+    }
+}

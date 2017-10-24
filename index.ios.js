@@ -10,7 +10,7 @@
 import React, { Component } from 'react';
 import { AppRegistry, StyleSheet, Text, View } from 'react-native';
 
-export default class ReactNativeVanilla extends Component {
+export default class ReactUiComponents extends Component {
   render() {
     return (
       <View style={styles.container}>
@@ -48,4 +48,4 @@ const styles = StyleSheet.create({
   }
 });
 
-AppRegistry.registerComponent('ReactNativeVanilla', () => ReactNativeVanilla);
+AppRegistry.registerComponent('ReactUiComponentsStories', () => ReactUiComponents);
