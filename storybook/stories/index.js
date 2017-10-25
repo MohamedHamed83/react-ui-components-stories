@@ -12,9 +12,10 @@ const {
   selectedDataStyle,
   subTextStyle,
   selectedMinStyle,
-  selectedTxtStyle
+  selectedTxtStyle,
+  cardItemsize
 } = styles;
-
+const width = Dimensions.get('window').width;
 const renderControl = () => {
   return (
     <Carousel.Control
@@ -91,16 +92,16 @@ storiesOf("carousel", module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
   .add("default Carousel", () => (
     <View style={{ flex: 1 }}>
-      <Carousel style={{ height: 238, width: 238 }}>
-        <View style={{ flexDirection: "row" }}>
+      <Carousel style={{ height: 238, width, marginLeft:10, marginRight:10 }}>
+        <View style={cardItemsize}>
           <Text style={selectedDataStyle}>100MB</Text>
           <Text style={subTextStyle}>DATA</Text>
         </View>
-        <View style={{ flexDirection: "row" }}>
+        <View style={cardItemsize}>
           <Text style={selectedMinStyle}>300 </Text>
           <Text style={subTextStyle}>MIN</Text>
         </View>
-        <View style={{ flexDirection: "row" }}>
+        <View style={cardItemsize}>
           <Text style={selectedTxtStyle}>250 </Text>
           <Text style={subTextStyle}>TXT</Text>
         </View>
@@ -110,16 +111,16 @@ storiesOf("carousel", module)
   .add("carousel  without timeout", () => (
     <View>
       <View style={{ flex: 1 }}>
-        <Carousel style={{ height: 238, width: 238 }} carousel={false}>
-          <View style={{ flexDirection: "row" }}>
+        <Carousel style={{ height: 238,  width,  marginLeft:10, marginRight:10}} cycle={true} carousel={false}>
+          <View style={cardItemsize}>
             <Text style={selectedDataStyle}>100MB</Text>
             <Text style={subTextStyle}>DATA</Text>
           </View>
-          <View style={{ flexDirection: "row" }}>
+          <View style={cardItemsize}>
             <Text style={selectedMinStyle}>300 </Text>
             <Text style={subTextStyle}>MIN</Text>
           </View>
-          <View style={{ flexDirection: "row" }}>
+          <View style={cardItemsize}>
             <Text style={selectedTxtStyle}>250 </Text>
             <Text style={subTextStyle}>TXT</Text>
           </View>
@@ -130,16 +131,16 @@ storiesOf("carousel", module)
   .add("carousel  With timeout loop 1 time", () => (
     <View>
       <View style={{ flex: 1 }}>
-        <Carousel style={{ height: 238, width: 238 }} cycle={false}>
-          <View style={{ flexDirection: "row" }}>
+        <Carousel style={{ height: 238, width, marginLeft:10, marginRight:10 }} cycle={false}>
+          <View style={cardItemsize}>
             <Text style={selectedDataStyle}>100MB</Text>
             <Text style={subTextStyle}>DATA</Text>
           </View>
-          <View style={{ flexDirection: "row" }}>
+          <View style={cardItemsize}>
             <Text style={selectedMinStyle}>300 </Text>
             <Text style={subTextStyle}>MIN</Text>
           </View>
-          <View style={{ flexDirection: "row" }}>
+          <View style={cardItemsize}>
             <Text style={selectedTxtStyle}>250 </Text>
             <Text style={subTextStyle}>TXT</Text>
           </View>
@@ -149,7 +150,7 @@ storiesOf("carousel", module)
   ))
   .add("carousel  With controls", () => (
     <View style={{ flex: 1 }}>
-      <Carousel style={{ height: 100, width: 200 }} control={renderControl()}>
+      <Carousel style={{ height: 238, width, marginLeft:10, marginRight:10}} control={renderControl()}>
         <View style={{ flexDirection: "row" }}>
           <Text style={selectedDataStyle}>100MB</Text>
           <Text style={subTextStyle}>DATA</Text>

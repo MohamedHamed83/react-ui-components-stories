@@ -28,7 +28,7 @@ export default class Welcome extends React.Component {
   render() {
     return (
       <View style={this.styles.wrapper}>
-        <Text style={this.styles.header}>Welcome to React Native common ui components</Text>
+        <Text style={this.styles.header}></Text>
       </View>
     );
   }
