@@ -92,7 +92,7 @@ storiesOf("carousel", module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
   .add("default Carousel", () => (
     <View style={{ flex: 1 }}>
-      <Carousel style={{ height: 238, width, marginLeft:10, marginRight:10 }}>
+      <Carousel style={{ height: 238, marginLeft:10, marginRight:10 }}>
         <View style={cardItemsize}>
           <Text style={selectedDataStyle}>100MB</Text>
           <Text style={subTextStyle}>DATA</Text>
@@ -111,7 +111,7 @@ storiesOf("carousel", module)
   .add("carousel  without timeout", () => (
     <View>
       <View style={{ flex: 1 }}>
-        <Carousel style={{ height: 238,  width,  marginLeft:10, marginRight:10}} cycle={true} carousel={false}>
+        <Carousel contentContainerStyle={{width}} style={{ height: 238,  marginLeft:10, marginRight:10}} carousel={false}>
           <View style={cardItemsize}>
             <Text style={selectedDataStyle}>100MB</Text>
             <Text style={subTextStyle}>DATA</Text>
@@ -131,7 +131,7 @@ storiesOf("carousel", module)
   .add("carousel  With timeout loop 1 time", () => (
     <View>
       <View style={{ flex: 1 }}>
-        <Carousel style={{ height: 238, width, marginLeft:10, marginRight:10 }} cycle={false}>
+        <Carousel contentContainerStyle={{width}} style={{ height: 238, marginLeft:10, marginRight:10 }} cycle={false}>
           <View style={cardItemsize}>
             <Text style={selectedDataStyle}>100MB</Text>
             <Text style={subTextStyle}>DATA</Text>
@@ -150,7 +150,7 @@ storiesOf("carousel", module)
   ))
   .add("carousel  With controls", () => (
     <View style={{ flex: 1 }}>
-      <Carousel style={{ height: 238, width, marginLeft:10, marginRight:10}} control={renderControl()}>
+      <Carousel contentContainerStyle={{width}} style={{ height: 238, width, marginLeft:10, marginRight:10}} control={renderControl()}>
         <View style={{ flexDirection: "row" }}>
           <Text style={selectedDataStyle}>100MB</Text>
           <Text style={subTextStyle}>DATA</Text>
