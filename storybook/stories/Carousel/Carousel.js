@@ -5,8 +5,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { StyleSheet, View, ScrollView } from "react-native";
-
-import Theme from "../Themes/Theme";
 import CarouselControl from "./CarouselControl";
 
 export default class Carousel extends Component {
@@ -83,7 +81,7 @@ export default class Carousel extends Component {
     let { children, carousel, direction, startIndex, cycle } = props;
 
     this.pageCount = children
-      ? children instanceof Array ? children.length : 1
+      ? children instanceof Array ? children.length / 2.5 : 1
       : 0;
 
     let multiPage = this.pageCount > 1;
@@ -217,7 +215,7 @@ export default class Carousel extends Component {
     if (width <= 0 || height <= 0 || !children) return null;
     if (!(children instanceof Array)) children = [children];
     let cards = [];
-    let cardStyle = { width: width, height: height, overflow: "hidden" };
+    let cardStyle = { width: width / 2.8, height: height, overflow: "hidden" };
     children.map((item, index) =>
       cards.push(
         <View style={cardStyle} key={"card" + index}>
@@ -266,7 +264,6 @@ export default class Carousel extends Component {
     return (
       <View style={[style, { alignItems: "stretch" }]}>
         <ScrollView
-          style={{ flex: 1 }}
           horizontal={horizontal}
           contentContainerStyle={contentContainerStyle}
           {...others}

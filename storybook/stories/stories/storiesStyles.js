@@ -3,9 +3,11 @@ import { StyleSheet } from 'react-native'
 
 export default StyleSheet.create({
     cardItemsize:{
+      flex:2,
         width:150,
         height:50,
-        flexDirection: "row"
+        flexDirection: "column",
+        alignItems:'center' 
     },
     selectedDataStyle: {
         fontSize: 34,

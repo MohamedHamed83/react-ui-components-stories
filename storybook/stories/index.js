@@ -8,6 +8,11 @@ import CenterView from "./CenterView";
 import Welcome from "./Welcome";
 import Carousel from "./Carousel/Carousel";
 import styles from "./stories/storiesStyles";
+import serviceOptions from "./stories/CarouselData";
+const { width, height } = Dimensions.get("window");
+const dataList = serviceOptions[0].values;
+const minList = serviceOptions[1].values;
+const txtList = serviceOptions[2].values;
 const {
   selectedDataStyle,
   subTextStyle,
@@ -15,7 +20,31 @@ const {
   selectedTxtStyle,
   cardItemsize
 } = styles;
-const width = Dimensions.get('window').width;
+
+const renderCarouselsData = dataList.map(function(item) {
+  return (
+    <View style={cardItemsize} key={item.value}>
+      <Text style={selectedDataStyle} >{item.value}</Text>
+      <Text style={subTextStyle}>DATA</Text>
+    </View>
+  );
+});
+const renderCarouselsMin = minList.map(function(item) {
+  return (
+    <View style={cardItemsize} key={item.value}>
+      <Text style={selectedMinStyle} >{item.value}</Text>
+      <Text style={subTextStyle}>MIN</Text>
+    </View>
+  );
+});
+const renderCarouselsTxt = txtList.map(function(item) {
+  return (
+    <View style={cardItemsize} key={item.value}>
+      <Text style={selectedTxtStyle}>{item.value}</Text>
+      <Text style={subTextStyle}>TXT</Text>
+    </View>
+  );
+});
 const renderControl = () => {
   return (
     <Carousel.Control
@@ -92,77 +121,178 @@ storiesOf("carousel", module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
   .add("default Carousel", () => (
     <View style={{ flex: 1 }}>
-      <Carousel style={{ height: 238, marginLeft:10, marginRight:10 }}>
-        <View style={cardItemsize}>
-          <Text style={selectedDataStyle}>100MB</Text>
-          <Text style={subTextStyle}>DATA</Text>
-        </View>
-        <View style={cardItemsize}>
-          <Text style={selectedMinStyle}>300 </Text>
-          <Text style={subTextStyle}>MIN</Text>
-        </View>
-        <View style={cardItemsize}>
-          <Text style={selectedTxtStyle}>250 </Text>
-          <Text style={subTextStyle}>TXT</Text>
-        </View>
-      </Carousel>
+        <Carousel
+          style={{
+            width: width,
+            height: 80,
+            paddingLeft: 10,
+            paddingRight: 10
+          }}
+          carousel={false}
+          cycle={false}
+          startIndex={1}
+        >
+          {renderCarouselsData}
+        </Carousel>
+        <Carousel
+          style={{
+            width: width,
+            height: 80,
+            paddingLeft: 10,
+            paddingRight: 10
+          }}
+          carousel={false}
+          cycle={false}
+          startIndex={1}
+        >
+          {renderCarouselsMin}
+        </Carousel>
+        <Carousel
+          style={{
+            width: width,
+            height: 80,
+            paddingLeft: 10,
+            paddingRight: 10
+          }}
+          carousel={false}
+          cycle={false}
+          startIndex={1}
+        >
+          {renderCarouselsTxt}
+        </Carousel>
     </View>
   ))
   .add("carousel  without timeout", () => (
     <View>
       <View style={{ flex: 1 }}>
-        <Carousel contentContainerStyle={{width}} style={{ height: 238,  marginLeft:10, marginRight:10}} carousel={false}>
-          <View style={cardItemsize}>
-            <Text style={selectedDataStyle}>100MB</Text>
-            <Text style={subTextStyle}>DATA</Text>
-          </View>
-          <View style={cardItemsize}>
-            <Text style={selectedMinStyle}>300 </Text>
-            <Text style={subTextStyle}>MIN</Text>
-          </View>
-          <View style={cardItemsize}>
-            <Text style={selectedTxtStyle}>250 </Text>
-            <Text style={subTextStyle}>TXT</Text>
-          </View>
+        <Carousel
+          style={{
+            width: width,
+            height: 80,
+            paddingLeft: 10,
+            paddingRight: 10
+          }}
+          carousel={false}
+          cycle={false}
+          startIndex={1}
+        >
+          {renderCarouselsData}
+        </Carousel>
+        <Carousel
+          style={{
+            width: width,
+            height: 80,
+            paddingLeft: 10,
+            paddingRight: 10
+          }}
+          carousel={false}
+          cycle={false}
+          startIndex={1}
+        >
+          {renderCarouselsMin}
+        </Carousel>
+        <Carousel
+          style={{
+            width: width,
+            height: 80,
+            paddingLeft: 10,
+            paddingRight: 10
+          }}
+          carousel={false}
+          cycle={false}
+          startIndex={1}
+        >
+          {renderCarouselsTxt}
         </Carousel>
       </View>
     </View>
   ))
   .add("carousel  With timeout loop 1 time", () => (
     <View>
-      <View style={{ flex: 1 }}>
-        <Carousel contentContainerStyle={{width}} style={{ height: 238, marginLeft:10, marginRight:10 }} cycle={false}>
-          <View style={cardItemsize}>
-            <Text style={selectedDataStyle}>100MB</Text>
-            <Text style={subTextStyle}>DATA</Text>
-          </View>
-          <View style={cardItemsize}>
-            <Text style={selectedMinStyle}>300 </Text>
-            <Text style={subTextStyle}>MIN</Text>
-          </View>
-          <View style={cardItemsize}>
-            <Text style={selectedTxtStyle}>250 </Text>
-            <Text style={subTextStyle}>TXT</Text>
-          </View>
+      <View style={{ flex: 1, paddingLeft: 20, paddingRight: 20 }}>
+      <Carousel
+          style={{
+            width: width,
+            height: 80,
+            paddingLeft: 10,
+            paddingRight: 10
+          }}
+          carousel={false}
+          cycle={false}
+          startIndex={1}
+        >
+          {renderCarouselsData}
+        </Carousel>
+        <Carousel
+          style={{
+            width: width,
+            height: 80,
+            paddingLeft: 10,
+            paddingRight: 10
+          }}
+          carousel={false}
+          cycle={false}
+          startIndex={1}
+        >
+          {renderCarouselsMin}
+        </Carousel>
+        <Carousel
+          style={{
+            width: width,
+            height: 80,
+            paddingLeft: 10,
+            paddingRight: 10
+          }}
+          carousel={false}
+          cycle={false}
+          startIndex={1}
+        >
+          {renderCarouselsTxt}
         </Carousel>
       </View>
     </View>
   ))
   .add("carousel  With controls", () => (
     <View style={{ flex: 1 }}>
-      <Carousel contentContainerStyle={{width}} style={{ height: 238, width, marginLeft:10, marginRight:10}} control={renderControl()}>
-        <View style={{ flexDirection: "row" }}>
-          <Text style={selectedDataStyle}>100MB</Text>
-          <Text style={subTextStyle}>DATA</Text>
-        </View>
-        <View style={{ flexDirection: "row" }}>
-          <Text style={selectedMinStyle}>300 </Text>
-          <Text style={subTextStyle}>MIN</Text>
-        </View>
-        <View style={{ flexDirection: "row" }}>
-          <Text style={selectedTxtStyle}>250 </Text>
-          <Text style={subTextStyle}>TXT</Text>
-        </View>
-      </Carousel>
+        <Carousel
+          style={{
+            width: width,
+            height: 80,
+            paddingLeft: 10,
+            paddingRight: 10
+          }}
+          carousel={false}
+          cycle={false}
+          startIndex={1}
+          control={renderControl()}
+        >
+          {renderCarouselsData}
+        </Carousel>
+        <Carousel
+          style={{
+            width: width,
+            height: 80,
+            paddingLeft: 10,
+            paddingRight: 10
+          }}
+          carousel={false}
+          cycle={false}
+          startIndex={0}
+        >
+          {renderCarouselsMin}
+        </Carousel>
+        <Carousel
+          style={{
+            width: width,
+            height: 80,
+            paddingLeft: 10,
+            paddingRight: 10
+          }}
+          carousel={false}
+          cycle={false}
+          startIndex={1}
+        >
+          {renderCarouselsTxt}
+        </Carousel>
     </View>
   ));
