@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native'
-import { Colors } from '../Themes/'
+import { Colors } from '../../Themes/'
 
 export default StyleSheet.create({
   buttonPrimary: {
@@ -14,6 +14,15 @@ export default StyleSheet.create({
   },
   textSecondary: {
     color: Colors.vfMineshaft
+  },
+
+  buttonTertiary: {
+    backgroundColor: Colors.transparent,
+    borderColor: Colors.vfIron,
+    borderWidth: 1
+  },
+  textTertiary: {
+    color: Colors.vfWhite
   },
 
   buttonDisabled: {

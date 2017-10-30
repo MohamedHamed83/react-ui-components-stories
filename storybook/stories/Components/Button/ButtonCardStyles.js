@@ -1,34 +1,34 @@
 import { StyleSheet } from 'react-native'
-import { Colors } from '../Themes/'
+import { Colors } from '../../Themes/'
 
 export default StyleSheet.create({
   buttonPrimary: {
-    backgroundColor: Colors.vfAnotherRed
+    backgroundColor: Colors.vfRed
   },
   textPrimary: {
     color: Colors.vfWhite
   },
 
   buttonSecondary: {
-    backgroundColor: Colors.vfAnotherGrey
+    backgroundColor: Colors.vfSteel
   },
   textSecondary: {
-    color: Colors.vfMineshaft
-  },
-
-  buttonTertiary: {
-    backgroundColor: Colors.transparent,
-    borderColor: Colors.vfIron,
-    borderWidth: 1
-  },
-  textTertiary: {
     color: Colors.vfWhite
   },
 
+  buttonTertiary: {
+    backgroundColor: Colors.vfWhite,
+    borderColor: Colors.vfMedGrey,
+    borderWidth: 1
+  },
+  textTertiary: {
+    color: Colors.vfMineshaft
+  },
+
   buttonDisabled: {
-    backgroundColor: Colors.vfSteel
+    backgroundColor: Colors.vfIron
   },
   textDisabled: {
-    color: Colors.vfMineshaft
+    color: Colors.vfWhite
   }
 })

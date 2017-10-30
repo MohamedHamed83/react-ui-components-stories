@@ -7,19 +7,15 @@ import {
   TouchableWithoutFeedback
 } from "react-native";
 import { storiesOf } from "@storybook/react-native";
-import { action } from "@storybook/addon-actions";
-import { linkTo } from "@storybook/addon-links";
-import Button from "./Components/Button";
-import CenterView from "./Components/CenterView";
-import Welcome from "./Welcome";
-import Carousel from "./Components/Carousel/Carousel";
-import { Divider } from "./Components/Dividers";
-import styles from "./stories/storiesStyles";
-import serviceOptions from "./stories/CarouselData";
+import CenterView from "../Components/CenterView";
+import Carousel from "../Components/Carousel/Carousel";
+import styles from "./storiesStyles";
+import serviceOptions from "./CarouselData";
 const { width, height } = Dimensions.get("window");
 const dataList = serviceOptions[0].values;
 const minList = serviceOptions[1].values;
 const txtList = serviceOptions[2].values;
+
 const {
   selectedDataStyle,
   subTextStyle,
@@ -58,7 +54,6 @@ const renderCarouselsData = dataList.map(function(item) {
       <View>
         <Text style={selectedDataStyle}>{item.value}</Text>
         <Text style={subTextStyle}>DATA</Text>
-        <Divider style={{height: 1, backgroundColor: '#9E9E9E'}} />
       </View>
     </TouchableWithoutFeedback>
   );
@@ -120,10 +115,6 @@ const renderControl = () => {
     />
   );
 };
-storiesOf("Welcome", module).add("Home", () => (
-  <Welcome showApp={linkTo("Button")} />
-));
-
 storiesOf("carousel", module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
   .add("default Carousel", () => (

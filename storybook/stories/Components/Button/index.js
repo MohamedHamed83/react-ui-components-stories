@@ -2,14 +2,14 @@
 
 import React from 'react'
 import { TouchableHighlight, StyleSheet, View, ActivityIndicator, Platform } from 'react-native'
-import testProps from '../Lib/TestUtils'
+import testProps from '../../Lib/TestUtils'
 import styles from './ButtonStyles'
 import heroStyles from './ButtonHeroStyles'
 import overlayStyles from './ButtonOverlayStyles'
 import cardStyles from './ButtonCardStyles'
 import pageNudgeStyles from './ButtonPageNudgeStyles'
-import { VFRegularText } from '../VodafoneText/VodafoneText'
-import { Colors } from '../Themes/'
+import { VFRegularText } from '../../VodafoneText/VodafoneText'
+import { Colors } from '../../Themes/'
 
 export type ButtonType = 'Primary' | 'Secondary' | 'Tertiary' | 'Disabled' | 'Loading'
 export type OnPageType = 'Overlay' | 'Hero' | 'Card' | 'PageNudge'
