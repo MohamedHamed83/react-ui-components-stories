@@ -5,9 +5,8 @@ import { setOptions } from '@storybook/addon-options';
 
 // import stories
 configure(() => {
-  // eslint-disable-next-line global-require
-  require('./stories/stories/button.Stories.js')
   require('./stories/stories/carousel.Stories.js')
+  require('./stories/stories/button.Stories.js')
 }, module);
 
 const StorybookUI = getStorybookUI({

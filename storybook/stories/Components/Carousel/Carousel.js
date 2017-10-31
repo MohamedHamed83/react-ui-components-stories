@@ -22,7 +22,7 @@ export default class Carousel extends Component {
   static defaultProps = {
     ...ScrollView.defaultProps,
     horizontal: true,
-    pagingEnabled: true,
+    pagingEnabled: false,
     showsHorizontalScrollIndicator: false,
     showsVerticalScrollIndicator: false,
     alwaysBounceHorizontal: false,
@@ -31,13 +31,14 @@ export default class Carousel extends Component {
     automaticallyAdjustContentInsets: false,
     scrollEventThrottle: 200,
     scrollsToTop: false,
-
+    pageCount: 3,
     carousel: true,
     interval: 3000,
     direction: "forward",
     startIndex: 0,
     cycle: true,
-    control: false
+    control: false,
+    cardWidth: 120
   };
 
   static Control = CarouselControl;
@@ -47,8 +48,7 @@ export default class Carousel extends Component {
     this.state = {
       width: 0,
       height: 0,
-      pageIndex: 0,
-      cardWidth: 120
+      pageIndex: 0
     };
     this.cardIndex = null;
     this.initByProps(props);
@@ -79,11 +79,9 @@ export default class Carousel extends Component {
   }
 
   initByProps(props) {
-    let { children, carousel, direction, startIndex, cycle } = props;
+    let { children, carousel, direction, startIndex, cycle, pageCount } = props;
 
-    this.pageCount = children
-      ? children instanceof Array ? children.length / 2 : 1
-      : 0;
+    this.pageCount = children ? (children instanceof Array ? pageCount : 1) : 0;
 
     let multiPage = this.pageCount > 1;
 
@@ -98,7 +96,7 @@ export default class Carousel extends Component {
     if (this.cardIndex === null || this.cardIndex >= this.cardCount)
       this.cardIndex = multiPage && this.cycle ? startIndex + 1 : startIndex;
 
-    this.step = this.forward ? 1 : -1;
+    this.step = this.forward ? 0.1 : 0.1;
   }
 
   setupTimer() {
@@ -119,8 +117,9 @@ export default class Carousel extends Component {
 
   scrollToCard(cardIndex, animated = true) {
     let { width, height } = this.state;
-    if (cardIndex < 0) cardIndex = 0;
-    else if (cardIndex >= this.cardCount) cardIndex = this.cardCount - 1;
+    if (cardIndex < 0) {
+      cardIndex = 0;
+    } else if (cardIndex >= this.cardCount) cardIndex = this.cardCount - 1;
     if (this.props.horizontal)
       this.refs.scrollView.scrollTo({
         x: width * cardIndex,
@@ -209,21 +208,30 @@ export default class Carousel extends Component {
     });
     this.props.onLayout && this.props.onLayout(e);
   }
-
+  cardItem(item, index) {
+    let { cardWidth } = this.props;
+    let { height } = this.state;
+    let cardStyle = { width: cardWidth, height: height, overflow: "hidden" };
+    return (
+      <View style={cardStyle} key={"card" + index}>
+        {item}
+      </View>
+    );
+  }
+  emptyCard() {
+    return <Text> </Text>;
+  }
   renderCards() {
-    let { width, height, cardWidth } = this.state;
+    let { width, height } = this.state;
     let { children } = this.props;
     if (width <= 0 || height <= 0 || !children) return null;
     if (!(children instanceof Array)) children = [children];
     let cards = [];
-    let cardStyle = { width: cardWidth, height: height, overflow: "hidden" };
-    children.map((item, index) =>
-      cards.push(
-        <View style={cardStyle} key={"card" + index}>
-          {item}
-        </View>
-      )
+    //empty items
+    cards.push(
+      this.cardItem(this.emptyCard, "empty1")
     );
+    children.map((item, index) => cards.push(this.cardItem(item, index)));
     return cards;
   }
 
